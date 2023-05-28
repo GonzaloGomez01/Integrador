@@ -1,14 +1,54 @@
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
 
+$Sky-Blue-Custom: (
+  "Sky-Blue-Custom": rgb(46, 162, 216)
+);
 
-$color-personalizado: (
-  "color-personalizado": rgb(46, 162, 216)
+$Yellow-Custom: (
+  "Yellow-Custom" : rgb(250, 221, 5)
+);
+
+$Yellow-Custom-two: (
+  "Yellow-Custom-two" : rgb(241, 227, 120)
+);
+
+$Gray-Custom: (
+  "Gray-Custom" : rgba(241, 241, 241, 0.908)
 );
 
 
-$theme-colors: map-merge($theme-colors, $color-personalizado);
+$Gray-Custom-two: (
+  "Gray-Custom-two" : rgb(190, 181, 181)
+);
+
+
+$theme-colors: map-merge($theme-colors, $Sky-Blue-Custom);
+$theme-colors: map-merge($theme-colors, $Yellow-Custom);
+$theme-colors: map-merge($theme-colors, $Gray-Custom);
+$theme-colors: map-merge($theme-colors, $Gray-Custom-two);
+$theme-colors: map-merge($theme-colors, $Yellow-Custom-two);
+
+nav,
+footer{
+  font-family: 'Ropa Sans', sans-serif;
+}
+
+.h-title{
+  font-family: 'Playfair Display SC', serif;
+}
+
+#contact{
+  font-family: 'Playfair Display SC', serif;
+}
+
+#cards{
+  font-family: 'Playfair Display SC', serif;
+}
 
 
 .aNav:active,
@@ -18,10 +58,11 @@ $theme-colors: map-merge($theme-colors, $color-personalizado);
     font-weight: bold;
 }
 
+
 .aFooter:hover{
     transform: scale(1);
     font-weight: bold;
-    background-color: rgb(85, 189, 237);
+    background-color: map-get($Yellow-Custom-two, Yellow-Custom-two);
 }
 
 /* Formulario de contacto */
@@ -33,7 +74,7 @@ $theme-colors: map-merge($theme-colors, $color-personalizado);
   border-radius: 8px;
   padding: 24px;
   color: #eee;
-  background-color: rgb(46, 162, 216);  
+  background-color: map-get($Sky-Blue-Custom,Sky-Blue-Custom);
   box-shadow: -8px 8px 8px rgb(78, 188, 239);
 }
 
@@ -62,7 +103,7 @@ $theme-colors: map-merge($theme-colors, $color-personalizado);
 }
 
 #contact button:hover{
-  color: rgb(46, 162, 216);
+  color: map-get($Sky-Blue-Custom,Sky-Blue-Custom);
   background-color: #eee;
 }
 
@@ -72,9 +113,10 @@ $theme-colors: map-merge($theme-colors, $color-personalizado);
   filter: brightness(0.6);
 }
 
-#Servicios{
-  background-color: rgb(46, 162, 216); 
-  border: 2px solid rgb(250, 221, 5);
+.btn-moreInfo:hover{
+  transform: scale(1);
+  font-weight: bold;
 }
+
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

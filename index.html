@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,10 +11,10 @@
 <body>
     <!-- Nav -->
     <div>
-        <nav class="navbar navbar-expand-lg bg-color-personalizado">
+        <nav class="navbar navbar-expand-lg bg-Sky-Blue-Custom">
             <div class="container-fluid">
-                <img src="Images/Avion.png" alt="Logo" width="70" height="70" class="rounded-circle border border-warning border-3">
-                <a class="navbar-brand fs-3 text-white mx-2">Vuela Alto</a>
+                <img src="Images/Avion.png" alt="Logo" width="70" height="70" class="rounded-circle border border-Yellow-Custom border-3">
+                <a class="navbar-brand fs-2 text-white mx-2">Vuela Alto</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -24,7 +24,7 @@
                             <a class="a aNav nav-link text-white" href="#">Iniciar Sesión</a>
                         </li>
                         <li class="nav-item">
-                            <a class="a aNav nav-link text-white" href="#Servicios">Servicios</a>
+                            <a class="a aNav nav-link text-white" href="#service">Servicios</a>
                         </li>
                         <li class="nav-item">
                             <a class="a aNav nav-link text-white" href="#contact">Contacto</a>
@@ -74,95 +74,91 @@
         </button>
     </div>
     <!-- Servicios -->
-    <div>
-        <h3 class="m-4 p-3 text-white text-center rounded border-5" id="Servicios">Nuestras ofertas</h3>
-    </div>
-    <div class="row row-cols-1 row-cols-md-2 g-4 m-2">
-        <div class="col">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-            </div>
-          </div>
+    <div class="bg-Gray-Custom m-4 p-2 rounded">
+      <div>
+        <h3 class="m-2 p-3 display-6 h-title text-center fw-bold" id="service">Servicios</h3>
       </div>
+      <div class="row row-cols-1 row-cols-md-2 g-4 m-2" id="cards">
+        <div class="col">
+          <div class="card">
+            <img src="./Images/Avion-card.jpg" class="card-img-top" height="300px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bold fs-4">Vuelos</h5>
+              <p class="card-text fs-6">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-end">
+                <a href="#" class="btn bg-Yellow-Custom btn-moreInfo btn-sm" role="button">+ Info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./Images/Alojamiento-card.jpg" class="card-img-top" height="300px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bold fs-4">Alojamientos</h5>
+              <p class="card-text fs-6">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-end">
+                <a href="#" class="btn bg-Yellow-Custom btn-moreInfo btn-sm" role="button">+ Info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./Images/Packs-card.jpg" class="card-img-top" height="300px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bold fs-4">Packs</h5>
+              <p class="card-text fs-6">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <div class="d-flex justify-content-end">
+                <a href="#" class="btn bg-Yellow-Custom btn-moreInfo btn-sm" role="button">+ Info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./Images/Actividades-card.jpg" class="card-img-top" height="300px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bold fs-4">Actividades</h5>
+              <p class="card-text fs-6">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-end">
+                <a href="#" class="btn bg-Yellow-Custom btn-moreInfo btn-sm" role="button">+ Info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Formulario de experiencia -->
     <div>
         <form id="contact" action="" method="post">
             <h2>Dejanos tu consulta</h2>
-            <label for="contact_name">Ingrese su nombre</label>
-            <input id="contact_name" name="name" type="text" maxlength="50" required>
-            <label for="contact_email">Ingrese su correo</label>
-            <input type="mail" name="email" id="contact_email" minlength="8" required>
-            <label for="contact_consult">Ingrese su consulta</label>
-            <textarea name="consult" id="contact_consult" minlength="20" maxlength="200" required></textarea>
-            <button>Enviar</button>
+            <label class="form-label">Ingrese su nombre</label>
+            <input id="contact_name" class="form-control" name="name" type="text" maxlength="50" required>
+            <label class="form-label">Ingrese su correo</label>
+            <input type="email" class="form-control" name="email" id="contact_email" minlength="8" required>
+            <label class="form-label">Ingrese su consulta</label>
+            <textarea name="consult" class="form-control" id="contact_consult" minlength="20" maxlength="200" required></textarea>
+            <button class="btn btn-primary" type="submit">Enviar</button>
         </form>
     </div>
     <!-- Footer -->
-    <footer class="bg-color-personalizado">
-        <div>
-            <p class="nav justify-content-center text-white fs-5">Seguinos en nuestras redes!</p>
+    <footer>
+        <div class="bg-Gray-Custom m-4 p-2 rounded">
+            <p class="nav justify-content-center fs-5">Seguinos en nuestras redes!</p>
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a class="a aFooter nav-link text-white shadow m-2 rounded" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                    <a class="a aFooter nav-link shadow m-2 rounded text-black" href="https://www.instagram.com/" target="_blank">Instagram</a>
                 </li>
                 <li class="nav-item">
-                    <a class="a aFooter nav-link text-white shadow m-2 rounded" href="https://www.facebook.com/" target="_blank">Facebook</a>
+                    <a class="a aFooter nav-link shadow m-2 rounded text-black" href="https://www.facebook.com/" target="_blank">Facebook</a>
                 </li>
                 <li class="nav-item">
-                    <a class="a aFooter nav-link text-white shadow m-2 rounded" href="https://twitter.com/" target="_blank">Twitter</a>
+                    <a class="a aFooter nav-link shadow m-2 rounded text-black" href="https://twitter.com/" target="_blank">Twitter</a>
                 </li>
             </ul>
+            <p class="text-center border-top border-Gray-Custom-two">&copy;2023 Todos los derechos reservados</p>
         </div>
-        <p class="text-center text-white m-3">&copy;2023 Todos los derechos reservados</p>
     </footer>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
