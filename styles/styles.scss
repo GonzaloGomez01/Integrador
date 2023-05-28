@@ -9,6 +9,10 @@ $Sky-Blue-Custom: (
   "Sky-Blue-Custom": rgb(46, 162, 216)
 );
 
+$Sky-Blue-Custom-two: (
+  "Sky-Blue-Custom-two" : rgb(208, 235, 248)
+);
+
 $Yellow-Custom: (
   "Yellow-Custom" : rgb(250, 221, 5)
 );
@@ -28,10 +32,12 @@ $Gray-Custom-two: (
 
 
 $theme-colors: map-merge($theme-colors, $Sky-Blue-Custom);
-$theme-colors: map-merge($theme-colors, $Yellow-Custom);
+$theme-colors: map-merge($theme-colors, $Sky-Blue-Custom-two);
 $theme-colors: map-merge($theme-colors, $Gray-Custom);
 $theme-colors: map-merge($theme-colors, $Gray-Custom-two);
+$theme-colors: map-merge($theme-colors, $Yellow-Custom);
 $theme-colors: map-merge($theme-colors, $Yellow-Custom-two);
+
 
 nav,
 footer{
@@ -108,9 +114,13 @@ footer{
 }
 
 .c-img{
-  height: 500px;
+  height: 85vh;
   object-fit: cover;
-  filter: brightness(0.6);
+  filter: brightness(60%);
+  -webkit-filter: brightness(60%);
+  -moz-filter: brightness(60%);
+  -o-filter: brightness(60%);
+  -ms-filter: brightness(60%);
 }
 
 .btn-moreInfo:hover{
@@ -118,5 +128,8 @@ footer{
   font-weight: bold;
 }
 
+.caption-center{
+  top: 80%;
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
