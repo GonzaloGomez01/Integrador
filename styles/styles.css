@@ -65,13 +65,11 @@ footer {
 
 #contact button {
   margin: 2px 0 0 auto;
-  color: #eee;
-  background-color: transparent;
 }
 
 #contact button:hover {
-  color: rgb(46, 162, 216);
-  background-color: #eee;
+  background-color: rgb(241, 227, 120);
+  border: 2px solid rgb(241, 227, 120);
 }
 
 .c-img {
@@ -92,6 +90,10 @@ footer {
 
 .caption-center {
   top: 80%;
+}
+
+#logo {
+  mix-blend-mode: color-burn;
 }
 
 /*!

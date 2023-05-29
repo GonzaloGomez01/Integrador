@@ -13,7 +13,7 @@
     <div>
         <nav class="navbar navbar-expand-lg bg-Sky-Blue-Custom">
             <div class="container-fluid">
-                <img src="Images/Avion.png" alt="Logo" width="70" height="70" class="rounded-circle border border-Yellow-Custom border-3">
+                <img src="Images/Avion.png" alt="Logo" width="70" height="70" class="rounded-circle border border-3" id="logo">
                 <a class="navbar-brand fs-2 text-white mx-2">Vuela Alto</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -127,18 +127,31 @@
       </div>
     </div>
     <!-- Formulario de experiencia -->
-    <div>
-        <form id="contact" action="server/server.html" method="post">
-            <h2>Dejanos tu consulta</h2>
-            <label class="form-label">Ingrese su nombre</label>
-            <input id="contact_name" class="form-control" name="name" type="text" maxlength="50" required>
-            <label class="form-label">Ingrese su correo</label>
-            <input type="email" class="form-control" name="email" id="contact_email" minlength="8" required>
-            <label class="form-label">Ingrese su consulta</label>
-            <textarea name="consult" class="form-control" id="contact_consult" minlength="20" maxlength="200" required></textarea>
-            <button class="btn btn-primary" type="submit">Enviar</button>
-        </form>
     </div>
+    <form id="contact" action="#" class="needs-validation" novalidate>
+      <h2>Dejanos tu consulta</h2>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" name="nombre" id="nombre" class="form-control" required>
+        <div class="invalid-feedback text-red fw-bold">Ingrese su nombre</div>
+      </div>
+      <div class="mb-3">
+        <label for="apellido" class="form-label">Apellido</label>
+        <input type="text" name="apellido" id="apellido" class="form-control" required>
+        <div class="invalid-feedback text-red fw-bold">Ingrese su apellido</div>
+      </div>
+      <div class="mb-3">
+        <label for="correo" class="form-label">Correo electrónico</label>
+        <input type="email" name="correo" id="correo" class="form-control" required>
+        <div class="invalid-feedback text-red fw-bold">Ingrese su correo electrónico</div>
+      </div>
+      <div class="mb-3">
+        <label for="consult" class="form-label">Consulta</label>
+        <textarea name="consult" class="form-control" id="consult" minlength="20" maxlength="200" required></textarea>
+        <div class="invalid-feedback text-red fw-bold">Ingrese su consulta</div>
+      </div>
+      <button type="submit" class="fw-bold rounded">Enviar</button>
+    </form>
     <!-- Footer -->
     <footer>
         <div class="bg-Gray-Custom m-4 p-2 rounded">
@@ -159,5 +172,6 @@
     </footer>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

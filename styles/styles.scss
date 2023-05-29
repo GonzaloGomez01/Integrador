@@ -104,13 +104,11 @@ footer{
 
 #contact button{
   margin: 2px 0 0 auto;
-  color: #eee;
-  background-color: transparent;
 }
 
 #contact button:hover{
-  color: map-get($Sky-Blue-Custom,Sky-Blue-Custom);
-  background-color: #eee;
+  background-color: map-get($Yellow-Custom-two, Yellow-Custom-two);
+  border: 2px solid map-get($Yellow-Custom-two, Yellow-Custom-two);
 }
 
 .c-img{
@@ -131,5 +129,10 @@ footer{
 .caption-center{
   top: 80%;
 }
+
+#logo{
+  mix-blend-mode: color-burn;
+}
+
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
