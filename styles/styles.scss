@@ -31,12 +31,17 @@ $Gray-Custom-two: (
 );
 
 
+$Blue-Custom: (
+  "Blue-Custom" : rgb(45, 104, 132)
+);
+
 $theme-colors: map-merge($theme-colors, $Sky-Blue-Custom);
 $theme-colors: map-merge($theme-colors, $Sky-Blue-Custom-two);
 $theme-colors: map-merge($theme-colors, $Gray-Custom);
 $theme-colors: map-merge($theme-colors, $Gray-Custom-two);
 $theme-colors: map-merge($theme-colors, $Yellow-Custom);
 $theme-colors: map-merge($theme-colors, $Yellow-Custom-two);
+$theme-colors: map-merge($theme-colors, $Blue-Custom);
 
 
 nav,
@@ -71,7 +76,7 @@ footer{
     background-color: map-get($Yellow-Custom-two, Yellow-Custom-two);
 }
 
-/* Formulario de contacto */
+
 #contact{
   max-width: 540px;
   display: flex;
@@ -132,6 +137,18 @@ footer{
 
 #logo{
   mix-blend-mode: color-burn;
+}
+
+
+/* LOGIN */
+#b-login{
+  background: url('/Images/Login-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgb(100, 100, 100);
+  background-blend-mode: soft-light; 
 }
 
 
